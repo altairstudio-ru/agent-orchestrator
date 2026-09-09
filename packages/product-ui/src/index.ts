@@ -1,4 +1,5 @@
 export * from "./AgentAvatar";
+export * from "./Analytics";
 export * from "./GithubAvatar";
 export * from "./UserAvatar";
 export * from "./agent-capabilities";
