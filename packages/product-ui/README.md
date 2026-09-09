@@ -33,6 +33,28 @@ Project exports provide controlled setup and settings presentations, neutral
 project models, and pure validation. Hosts inject translated labels and their
 own agent, model, reviewer, intake, persistence, and platform actions.
 
+## Analytics
+
+This package includes the Vercel Web Analytics component for application consumers:
+
+```tsx
+import { Analytics } from "@aoagents/product-ui";
+
+export default function App() {
+	return (
+		<>
+			<YourApp />
+			<Analytics />
+		</>
+	);
+}
+```
+
+The `Analytics` component is a re-export of `@vercel/analytics/react` that enables
+automatic page view tracking and web vitals collection when deployed to Vercel.
+No additional configuration is required—simply include the component in your root
+layout or app component.
+
 ## Development
 
 ```bash
